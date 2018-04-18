@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A portfolio</title>
+    <meta name="description" content="A portfolio site showing off.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#02b3e5">
+</head>
+
+<body>
+    <div class="container">
+        <header class="identity">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 6" height="48" width="48">
+                <circle r="3" cy="3" cx="3" fill="#02b3e4" />
+                <circle r="2" cy="3" cx="3" fill="white" />
+                <circle r="1" cy="3" cx="3" fill="#02b3e4" />
+            </svg>
+            <div class="name-container">
+                <h1 class="name">Thomas Iles</h1>
+                <div class="description">Developer</div>
+            </div>
+        </header>
+        <section class="hero">
+            <img class="hero__image" srcset="img/code2-320.jpg 320w, img/code2-480.jpg 480w, img/code2-640.jpg 640w, img/code2-800.jpg 800w" src="img/code2-16x9.jpg"
+                sizes="(min-width : 480px) 60rem, 100vw" alt="A picture of some html code.">
+        </section>
+        <section class="work">
+            <header>
+                <h2 class="section__title">Featured Work</h2>
+            </header>
+            <div class="work-container">
+                <article class="work-card">
+                    <div class="work-card__image-container">
+                        <picture>
+                            <img class="work-card__image" src="img/lakes-768.jpg" alt="A screenshot of the Maps application">
+                        </picture>
+                    </div>
+                    <div class="work-card__blurb">
+                        <h3 class="work-card__title">Lake District Wedding Venues</h3>
+                        <a href="https://hexaglot.github.io/lakedistrict/dist/">Wedding Venues App</a>
+                        <p>A TypeScript, Knockout Single-Page application with Google Maps.</p>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-card__image-container">
+                        <picture>
+                            <img class="work-card__image" src="img/arcade-768.jpg" alt="An Arcade Game.">
+                        </picture>
+                    </div>
+                    <div class="work-card__blurb">
+                        <h3 class="work-card__title">Arcade Game</h3>
+                        <a href="https://hexaglot.github.io/road-crossing/index.html">Arcade Game</a>
+                        <p>An arcade game using HTML Canvas and JavaScript</p>
+                    </div>
+                </article>
+
+                <article class="work-card">
+                    <div class="work-card__image-container">
+                        <picture>
+                            <img class="work-card__image" src="img/pairs-768.jpg" alt="A screenshot of the Card Game">
+                        </picture>
+                    </div>
+                    <div class="work-card__blurb">
+                        <h3 class="work-card__title">Pairs Game</h3>
+                        <a href="https://hexaglot.github.io/pairs/">Pairs Game</a>
+                    </div>
+                    <p>An HTML5 card game using JavaScript and showcasing the new CSS Grid property</p>
+                </article>
+            </div>
+        </section>
+        <footer class="page__footer"></footer>
+    </div>
+</body>
+
+</html>
